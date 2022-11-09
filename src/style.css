@@ -33,3 +33,14 @@
   transition: 200ms;
   transform: translateX(-110px);
 }
+
+.Todo {
+  background-color: rgba(150, 150, 150, 0.7);
+  border: 5px;
+  position: fixed;
+  height: 95%;
+  width: 95%;
+  transition: 500ms;
+  transform: translateX(-95%);
+  bottom: 0;
+}
