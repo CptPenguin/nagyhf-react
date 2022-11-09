@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { LoginFail } from './LoginFail.js';
 
 export function Login({ setLoginScreen }) {
   const [loginOk, setLoginOk] = useState(false);
   const [pwOk, setPwOk] = useState(false);
+  //const [onButtonPressLoginFail, setOnButtonPressLoginFail] = useState(false);
   return (
     <div className="Loginbase">
       <div className="Loginwindow">
@@ -28,11 +30,12 @@ export function Login({ setLoginScreen }) {
           onClick={() => {
             loginOk && pwOk
               ? setLoginScreen(false)
-              : console.log('Email or password missing!');
+              : console.log("Email or password missing!")//setOnButtonPressLoginFail(false);
           }}
         >
           Log in
         </button>
+        
       </div>
     </div>
   );

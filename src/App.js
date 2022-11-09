@@ -21,9 +21,9 @@ vertikális menü:
     üzenetet lehessen törölni
 */
 export default function App() {
-  const [loginScreen, setLoginScreen] = useState(true)
+  const [loginScreen, setLoginScreen] = useState(false)
   return (<div>
     {loginScreen && <Login setLoginScreen={setLoginScreen}/>}
-    {!loginScreen && <Home/>}
+    {!loginScreen && <Home setLoginScreen={setLoginScreen}/>}
   </div>);
 }

@@ -15,3 +15,21 @@
   justify-content: center;
   align-items: center;
 }
+
+.HorizontalMenu {
+  position: fixed;
+  height: 40px;
+  width: 95%;
+  border: 3px solid black;
+  display: flex;
+  justify-content: end;
+}
+
+.Vertical {
+  border: 5px solid black;
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  transition: 200ms;
+  transform: translateX(-110px);
+}
