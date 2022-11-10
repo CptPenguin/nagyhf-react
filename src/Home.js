@@ -8,7 +8,7 @@ export function Home({ setLoginScreen }) {
   const [verticalOpen, setVerticalOpen] = useState(false);
   const [todoOpen, setTodoOpen] = useState(false);
   const [arrayOfTodos, setArrayOfTodos] = useState([]);
-  const [chatOpen, setChatOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(true);
   return (
     <div>
       <Horizontal
