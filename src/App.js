@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import {Login} from './Login.js'
-import {Home} from './Home.js'
+import React, { useState } from 'react';
+import { Login } from './Login.js';
+import { Home } from './Home.js';
 import './style.css';
 
 /*1. feladat
@@ -21,9 +21,11 @@ vertikális menü:
     üzenetet lehessen törölni
 */
 export default function App() {
-  const [loginScreen, setLoginScreen] = useState(true)
-  return (<div>
-    {loginScreen && <Login setLoginScreen={setLoginScreen}/>}
-    {!loginScreen && <Home setLoginScreen={setLoginScreen}/>}
-  </div>);
+  const [loginScreen, setLoginScreen] = useState(false);
+  return (
+    <div>
+      {loginScreen && <Login setLoginScreen={setLoginScreen} />}
+      {!loginScreen && <Home setLoginScreen={setLoginScreen} />}
+    </div>
+  );
 }
