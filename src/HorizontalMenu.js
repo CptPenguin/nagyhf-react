@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { css } from '@emotion/react';
-import styled from '@emotion.styled';
+import styled from '@emotion/styled';
 
 export function Horizontal({
   setLoginScreen,
